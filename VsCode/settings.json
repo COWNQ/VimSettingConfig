@@ -1,0 +1,300 @@
+{
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.selectionHighlight": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    //保存自动格式化
+    "editor.formatOnSave": true,
+    //文件自动保存（当编辑器失去焦点）
+    "files.autoSave": "onFocusChange",
+    "keyboard.dispatch": "keyCode",
+    "editor.fontSize": 15,
+    //文件图标主题
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    //插件配置
+    //Color Highlight插件配置
+    "color-highlight.markerType": "dot-before",
+    "color-highlight.useARGB": true,
+    "color-highlight.matchWords": true,
+    "color-highlight.matchRgbWithNoFunction": true,
+    "color-highlight.matchHslWithNoFunction": true,
+    //"vim.camelCaseMotion.enable": true,
+    //高亮显示
+    "vim.hlsearch": true,
+    //开启高亮显示复制的内容
+    "vim.highlightedyank.enable": true,
+    //复制时的颜色
+    "vim.highlightedyank.color": "#ffff00",
+    //复制颜色停留时间
+    "vim.highlightedyank.duration": 1000,
+    "vim.highlightedyank.textColor": "#000000",
+    //设置leader
+    "vim.leader": "<space>",
+    //开启Vim的easymotion插件
+    "vim.easymotion": true,
+    //使用系统剪贴板
+    "vim.useSystemClipboard": true,
+    //忽略大小写
+    "vim.ignorecase": true,
+    "vim.incsearch": true,
+    "vim.useCtrlKeys": true,
+    "vim.sneak": true,
+    // 智能行号
+    // "vim.smartRelativeLine": true,
+    //关闭系统拷贝和复制
+    "vim.overrideCopy": true,
+    //正常模式下重新映射按键。允许映射到 Vim 命令或 VS Code 操作。有关详细信息，请参阅自述文件。
+    "vim.normalModeKeyBindings": [
+        //切换至下一个编辑页面
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ],
+        },
+        //显示vscode命令面板
+        {
+            "before": [
+                ":"
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ],
+            "silent": true
+        },
+        //使用vscode撤销操作
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        //重做
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        //增加缩进
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        //减少缩进
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "m"
+            ],
+            "commands": [
+                "editor.action.formatDocument",
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "after": [
+                "+"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "after": [
+                "-"
+            ]
+        },
+        // 变量符号重命名
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        // 转到定义
+        {
+            "before": [
+                "<leader>",
+                "d",
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        // 转到引用
+        {
+            "before": [
+                "<leader>",
+                "y",
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        // 转到实现
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        //向光标下添加换行符
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        },
+        // 鼠标悬浮提示 
+        {
+            "before": [
+                "<leader>",
+                "i"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        //保存
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        //向右分割编辑页面
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        //显示资源管理器
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        // 全部折叠
+        {
+            "before": [
+                "<leader>",
+                "{"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        // 全部展开
+        {
+            "before": [
+                "<leader>",
+                "}"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "f"
+        //     ],
+        //     "commands": [
+        //         "revealInExplorer"
+        //     ]
+        // },
+    ],
+    "vim.handleKeys": {
+        "<D-a>": false,
+        "<cmd-f>": false,
+        "<cmd-s>": false
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+}
