@@ -1,16 +1,21 @@
 {
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.selectionHighlight": false,
-    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontFamily": "'0xProto Nerd Font', Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "window.zoomLevel": 2,
+    "window.zoomPerWindow": false,
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true,
+    "terminal.integrated.fontSize": 14,
     //保存自动格式化
     "editor.formatOnSave": true,
     //文件自动保存（当编辑器失去焦点）
     "files.autoSave": "onFocusChange",
     "keyboard.dispatch": "keyCode",
-    "editor.fontSize": 15,
-    //文件图标主题
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "editor.fontSize": 13,
     //插件配置
     //Color Highlight插件配置
     "color-highlight.markerType": "dot-before",
@@ -219,7 +224,7 @@
             ],
             "silent": true
         },
-        // 鼠标悬浮提示 
+        // 鼠标悬浮提示
         {
             "before": [
                 "<leader>",
@@ -297,4 +302,5 @@
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
+    "explorer.confirmDelete": false,
 }
