@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "vadimcn.vscode-lldb",
+        "ms-ceintl.vscode-language-pack-zh-hans",
+        "naumovs.color-highlight",
+        "usernamehw.errorlens",
+        "tamasfe.even-better-toml",
+        "ritwickdey.liveserver",
+        "pkief.material-icon-theme",
+        "zhuangtongfa.material-theme",
+        "jeff-hykin.polacode-2019",
+        "alefragnani.project-manager",
+        "dustypomerleau.rust-syntax",
+        "rust-lang.rust-analyzer",
+        "simonsiefke.svg-preview",
+        "vscodevim.vim"
+    ]
+}

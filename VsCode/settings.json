@@ -2,10 +2,10 @@
     "editor.fontLigatures": true,
     "editor.selectionHighlight": false,
     "editor.fontFamily": "'0xProto Nerd Font', Monaco, 'Courier New', monospace",
-    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "window.zoomPerWindow": false,
     "editor.mouseWheelZoom": true,
     "terminal.integrated.mouseWheelZoom": true,
@@ -70,6 +70,7 @@
         //显示vscode命令面板
         {
             "before": [
+                "<leader>",
                 ":"
             ],
             "commands": [
@@ -295,7 +296,7 @@
         // },
     ],
     "vim.handleKeys": {
-        "<D-a>": false,
+        //"<D-a>": false,
         "<cmd-f>": false,
         "<cmd-s>": false
     },
